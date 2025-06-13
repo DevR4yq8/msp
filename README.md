@@ -61,7 +61,7 @@ Witaj, szefie! To jest kompletna dokumentacja i instrukcja obsługi twojego nowe
 
 ## 📚 2. Książka Komend
 
-Oto lista wszystkich zabawek, które stworzyliśmy.
+Oto lista wszystkich zabawek:
 
 ### Moderacja
 | Komenda | Opis | Przykład Użycia | Wymagane Uprawnienia |
