@@ -10,7 +10,18 @@ Witaj, szefie! To jest kompletna dokumentacja i instrukcja obsługi twojego nowe
 - Python 3.8+
 - Konto Discord
 
-### b) Konfiguracja Plików
+### b) Uzyskanie Tokenu Bota
+1.  Wejdź na [Discord Developer Portal](https://discord.com/developers/applications).
+2.  Kliknij **"New Application"** i nadaj botu nazwę (np. "MSP Bot").
+3.  Przejdź do zakładki **"Bot"** po lewej.
+4.  Kliknij **"Add Bot"** i potwierdź.
+5.  Pod nazwą bota kliknij **"Reset Token"** (lub "View Token"), skopiuj go i trzymaj w bezpiecznym miejscu. **NIGDY go nikomu nie pokazuj!**
+6.  Zjedź niżej do sekcji **Privileged Gateway Intents** i włącz WSZYSTKIE trzy przełączniki:
+    - `PRESENCE INTENT`
+    - `SERVER MEMBERS INTENT`
+    - `MESSAGE CONTENT INTENT`
+
+### c) Konfiguracja Plików
 1.  Upewnij się, że masz taką strukturę plików:
     ```
     bot/
@@ -32,16 +43,17 @@ Witaj, szefie! To jest kompletna dokumentacja i instrukcja obsługi twojego nowe
     DISCORD_TOKEN=TUTAJ_WKLEJ_SWÓJ_TOKEN
     GUILD_ID=TUTAJ_WKLEJ_ID_TWOJEGO_SERWERA
     ```
+    *(Jeśli nie masz tego pliku to se go stwórz)*
     *(Aby uzyskać ID serwera, włącz Tryb Dewelopera w Discordzie, kliknij PPM na ikonę serwera i "Kopiuj ID serwera")*
 
 ### d) Uruchomienie
-1.  Otwórz terminal/konsolę w folderze `bot/`.
+1.  Otwórz terminal/konsolę w folderze `msp/`.
 2.  Zainstaluj wymagane biblioteki: `pip install -r requirements.txt`
 3.  Uruchom bota: `python main.py`
 4.  Bot powinien być online!
 
 ### e) Konfiguracja Uprawnień Bota na Serwerze
-1.  Zaproś bota na serwer używając linku wysłanego przez DevR4yq
+1.  Zaproś bota na serwer używając linku wygenerowanego w Developer Portal (OAuth2 -> URL Generator, zaznacz `bot` i `applications.commands`, nadaj uprawnienia `Administrator`).
 2.  Na swoim serwerze wejdź w `Ustawienia serwera` -> `Role`.
 3.  Znajdź rolę z nazwą swojego bota i **przeciągnij ją na samą górę listy ról**. To jest MEGA ważne, żeby bot miał władzę nad innymi rolami.
 
